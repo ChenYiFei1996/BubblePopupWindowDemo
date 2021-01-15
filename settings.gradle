@@ -1,0 +1,3 @@
+include ':bubblepopupwindow'
+include ':app'
+rootProject.name = "BubblePopupWindowDemo"
