@@ -40,8 +40,20 @@ public class BubblePopupWindow extends PopupWindow {
      */
     public void setBubbleView(View view) {
         bubbleView.setBackgroundColor(Color.TRANSPARENT);
+        view.setPadding(10, 10, 10, 10);
         bubbleView.addView(view);
         setContentView(bubbleView);
+    }
+
+    /**
+     * 设置气泡尖角大小
+     *
+     * @param high   垂直于气泡上尖角所在边的高度
+     * @param bottom 位于气泡上尖角所在边的尖角边长度
+     */
+    public void setTriangleSize(int high, int bottom) {
+        bubbleView.setmPadding(high);
+        bubbleView.setmTriangleHalfBase(bottom / 2);
     }
 
     /**

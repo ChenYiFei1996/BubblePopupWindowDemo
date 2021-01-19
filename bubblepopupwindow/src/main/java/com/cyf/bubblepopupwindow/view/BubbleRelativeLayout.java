@@ -308,6 +308,7 @@ public class BubbleRelativeLayout extends RelativeLayout {
      * 获取尖角路径
      */
     private void renderBubbleTrianglePath() {
+        mBubbleTrianglePath.rewind();
         mBubbleTrianglePath.moveTo(0, 0);
         mBubbleTrianglePath.lineTo(mPadding * 1.5f, -mTriangleHalfBase);
         mBubbleTrianglePath.lineTo(mPadding * 1.5f, mTriangleHalfBase);

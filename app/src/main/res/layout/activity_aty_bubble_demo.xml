@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.AtyBubbleDemo">
+
+    <data>
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/top_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上方气泡"
+            android:textSize="20dp"
+            android:onClick="@{onClick}"/>
+
+        <Button
+            android:id="@+id/bottom_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="下方气泡"
+            android:textSize="20dp"
+            android:onClick="@{onClick}"/>
+
+        <Button
+            android:id="@+id/left_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="左侧气泡"
+            android:textSize="20dp"
+            android:onClick="@{onClick}"/>
+
+        <Button
+            android:id="@+id/right_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="右侧气泡"
+            android:textSize="20dp"
+            android:onClick="@{onClick}"/>
+
+    </LinearLayout>
+
+</layout>
